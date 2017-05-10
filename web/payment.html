@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+
+<body>
+
+<div class="jumbotron text-center">
+  <h1>PAYMENT METHOD</h1>
+  <h1> <small>Choose one</small> </h1>
+</div>
+  
+<div class = "container text-center row">
+  <div class = "col-sm-3"></div>
+
+  <div class = "col-sm-3 text-center">
+    <button id="cash_button" type="button" class="btn btn-lg">
+        <h1>CASH
+            <i class="glyphicon glyphicon-euro"></i>
+        </h1>
+    </button>
+  </div>
+
+
+  <div class = "col-sm-1"></div>
+
+  <div class = "col-sm-3 text-center">
+    <button id="credit_button" type="button" class="btn btn-lg"> 
+        <h1>CREDIT CARD
+            <i class="glyphicon glyphicon-credit-card"></i>
+        </h1>
+    </button>
+  </div>
+
+
+</div>
+
+  <p>&nbsp</p>
+  <p>&nbsp</p>
+  <p>&nbsp</p>
+  <p>&nbsp</p>
+
+<div class = "container text-center row">
+  <div class = "col-sm-3"></div>
+
+  <div class = "col-sm-2 text-center">
+    <button id="help_button" type="button" class="btn btn-warning btn-lg"> 
+        <span class="glyphicon glyphicon-user"></span> Help 
+    </button>
+  </div>
+    <script type="text/javascript">
+        document.getElementById("help_button").onclick = function () {
+            location.href = "help.html";
+        };
+    </script>
+
+  <div class = "col-sm-4"></div>
+
+  <div class = "col-sm-2 text-center">
+    <button id="back_button" type="button" class="btn btn-danger btn-lg"> 
+        Back 
+    </button>
+  </div>
+  <script type="text/javascript">
+    document.getElementById("back_button").onclick = function () {
+        location.href = "page.html";
+    };
+  </script>
+
+  <div class = "col-sm-3"></div>
+</div>
+
+</body>
+</html>

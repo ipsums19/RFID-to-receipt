@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+
+<body background="proba.jpg">
+
+
+<div class="jumbotron text-center">
+    <img src="resources/Logo-carrefour.jpg" class="img-rounded" alt="Cinque Terre" width="700" height="150">
+</div>
+
+
+<div class = "container text-center row">
+  <div class = "col-sm-4"></div>
+  <div class = "col-sm-6">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="text-center">Item</th>
+        <th class="text-center">Price €</th>
+        <th class="text-center">Quantity</th>
+        <th class="text-center">Total Price €</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Milk</td> <td> 1.25</td> <td> 2</td> <td> 2.50</td>
+      </tr>
+      <tr>
+        <td>Bread</td> <td> 0.99</td> <td> 5</td> <td> 4.95</td>
+      </tr>
+      <tr>
+        <td>Jam</td> <td>2.49</td> <td> 1</td> <td>2.49</td>
+      </tr>
+      <tr>
+        <td>Jam</td> <td>2.49</td> <td> 1</td> <td>2.49</td>
+      </tr>
+      <tr>
+        <td>Jam</td> <td>2.49</td> <td> 1</td> <td>2.49</td>
+      </tr>
+      <tr>
+        <td>Jam</td> <td>2.49</td> <td> 1</td> <td>2.49</td>
+      </tr>
+      <tr>
+        <td></td> <td></td> <td> </td> <td></td>
+      </tr>
+      <tr>
+          <td><pre><dt>TOTAL</dt></pre></td> <td></td> <td> </td> <td><pre><dt>18.45 €</dt></pre></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div>
+</div>
+
+<div class = "container text-center row">
+  <div class = "col-sm-4"></div>
+
+
+  <div class = "col-sm-1 text-center">
+    <button id="help_button" type="button" class="btn btn-warning btn-lg"> 
+        <span class="glyphicon glyphicon-user"></span> Help 
+    </button>
+  </div>
+    <script type="text/javascript">
+        document.getElementById("help_button").onclick = function () {
+            location.href = "help.html";
+        };
+    </script>
+
+  <div class = "col-sm-2"></div>
+
+  <div class = "col-sm-2">
+    <button id="accept_button" type="button" class="btn btn-success btn-lg">
+        <span class="glyphicon glyphicon-shopping-cart"></span> 
+        Accept 
+    </button>
+  </div>
+    <script type="text/javascript">
+        document.getElementById("accept_button").onclick = function () {
+            location.href = "payment.html";
+        };
+    </script>
+
+
+  <div class = "col-sm-1 text-center">
+    <button id="cancel_button" type="button" class="btn btn-danger btn-lg">
+        <span class="glyphicon glyphicon-remove-circle"></span> 
+          Deny 
+    </button>
+  </div>
+    <script type="text/javascript">
+        document.getElementById("cancel_button").onclick = function () {
+            location.href = "intro.html";
+        };
+    </script>
+
+</div>
+
+</body>
+
+</html>
