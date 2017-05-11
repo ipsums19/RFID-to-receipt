@@ -20,6 +20,14 @@
     div.content  {
     padding: 00px 50px 00px 5px;
     }
+    .btn-xlarge {
+        padding: 18px 28px;
+        font-size: 22px;
+        line-height: normal;
+        -webkit-border-radius: 8px;
+           -moz-border-radius: 8px;
+                border-radius: 8px;
+    }
 </style>
 </head>
 
@@ -78,22 +86,8 @@
 <div class = "container text-center row">
   <div class = "col-sm-3"></div>
 
-  <div class = "col-sm-4">
-    <button id="accept_button" type="button" class="btn btn-success btn-lg">
-        <span class="glyphicon glyphicon-shopping-cart"></span> 
-        Accept 
-    </button>
-  </div>
-    <script type="text/javascript">
-        document.getElementById("accept_button").onclick = function () {
-            location.href = "payment.html";
-        };
-    </script>
-
-  <!--<div class = "col-sm-0 content" ></div>-->
-
   <div class = "col-sm-4 text-center">
-    <button id="cancel_button" type="button" class="btn btn-danger btn-lg">
+    <button id="cancel_button" type="button" class="btn btn-danger btn-xlarge">
         <span class="glyphicon glyphicon-remove-circle"></span> 
           Deny 
     </button>
@@ -104,9 +98,20 @@
         };
     </script>
 
+  <div class = "col-sm-4">
+    <button id="accept_button" type="button" class="btn btn-success btn-xlarge">
+        <span class="glyphicon glyphicon-shopping-cart"></span> 
+        Accept 
+    </button>
+  </div>
+    <script type="text/javascript">
+        document.getElementById("accept_button").onclick = function () {
+            location.href = "payment.html";
+        };
+    </script>
+
 </div>
 
-  <p>&nbsp</p>
   <p>&nbsp</p>
   <p>&nbsp</p>
 
