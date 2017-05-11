@@ -2,25 +2,35 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>Carrefour receipt</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style> 
+    body { 
+        background: url(resources/Picture1.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    img.firstImage {
+        padding: 50px 0px 60px 0px;
+    }
+</style>
 </head>
 
 
-<body background="proba.jpg">
+<body background="resources/Picture1.png">
 
-
-<div class="jumbotron text-center">
-    <img src="resources/Logo-carrefour.jpg" class="img-rounded" alt="Cinque Terre" width="700" height="150">
+<div class=" text-center">
+  <img src="resources/Picture3.png" class="img-rounded firstImage" hspace="20" width="800" height="230">
 </div>
-
 
 <div class = "container text-center row">
   <div class = "col-sm-4"></div>
   <div class = "col-sm-6">
-  <table class="table table-striped">
+  <table class="table " style="background-color:rgba(220, 220, 250, 0.5);">
     <thead>
       <tr>
         <th class="text-center">Item</th>
@@ -52,7 +62,7 @@
         <td></td> <td></td> <td> </td> <td></td>
       </tr>
       <tr>
-          <td><pre><dt>TOTAL</dt></pre></td> <td></td> <td> </td> <td><pre><dt>18.45 €</dt></pre></td>
+          <td><dt>TOTAL</dt></td> <td></td> <td> </td> <td><dt>18.45 €</dt></td>
       </tr>
     </tbody>
   </table>
